@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		E69411032834F08E003DCC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69411022834F08E003DCC90 /* AppDelegate.swift */; };
 		E69411052834F08E003DCC90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69411042834F08E003DCC90 /* SceneDelegate.swift */; };
-		E69411072834F08E003DCC90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69411062834F08E003DCC90 /* ViewController.swift */; };
 		E694110A2834F08E003DCC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69411082834F08E003DCC90 /* Main.storyboard */; };
 		E694110C2834F08F003DCC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E694110B2834F08F003DCC90 /* Assets.xcassets */; };
 		E694110F2834F08F003DCC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E694110D2834F08F003DCC90 /* LaunchScreen.storyboard */; };
+		E69411172834F0D1003DCC90 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69411162834F0D1003DCC90 /* ContactListViewController.swift */; };
+		E694111D2834F15A003DCC90 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E694111C2834F15A003DCC90 /* Person.swift */; };
+		E696151C283501D000455DE8 /* DetailedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696151B283501D000455DE8 /* DetailedListViewController.swift */; };
+		E696151E2835021E00455DE8 /* ContactDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696151D2835021E00455DE8 /* ContactDataViewController.swift */; };
+		E6AAA3AB283538D300272E86 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAA3AA283538D300272E86 /* DataManager.swift */; };
+		E6AAA3AF28353B7400272E86 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAA3AE28353B7400272E86 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E69410FF2834F08E003DCC90 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69411022834F08E003DCC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E69411042834F08E003DCC90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E69411062834F08E003DCC90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E69411092834F08E003DCC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E694110B2834F08F003DCC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E694110E2834F08F003DCC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E69411102834F08F003DCC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69411162834F0D1003DCC90 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		E694111C2834F15A003DCC90 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E696151B283501D000455DE8 /* DetailedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedListViewController.swift; sourceTree = "<group>"; };
+		E696151D2835021E00455DE8 /* ContactDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDataViewController.swift; sourceTree = "<group>"; };
+		E6AAA3AA283538D300272E86 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E6AAA3AE28353B7400272E86 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		E69411012834F08E003DCC90 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				E69411022834F08E003DCC90 /* AppDelegate.swift */,
-				E69411042834F08E003DCC90 /* SceneDelegate.swift */,
-				E69411062834F08E003DCC90 /* ViewController.swift */,
-				E69411082834F08E003DCC90 /* Main.storyboard */,
-				E694110B2834F08F003DCC90 /* Assets.xcassets */,
-				E694110D2834F08F003DCC90 /* LaunchScreen.storyboard */,
-				E69411102834F08F003DCC90 /* Info.plist */,
+				E6AAA3A9283538B700272E86 /* Services */,
+				E694111B2834F12E003DCC90 /* ViewControllers */,
+				E69411192834F10A003DCC90 /* Storyboards */,
+				E694111E2834F182003DCC90 /* Model */,
+				E69411182834F0EC003DCC90 /* App */,
+				E694111A2834F119003DCC90 /* Resoures */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		E69411182834F0EC003DCC90 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E69411022834F08E003DCC90 /* AppDelegate.swift */,
+				E69411042834F08E003DCC90 /* SceneDelegate.swift */,
+				E69411102834F08F003DCC90 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E69411192834F10A003DCC90 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E69411082834F08E003DCC90 /* Main.storyboard */,
+				E694110D2834F08F003DCC90 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E694111A2834F119003DCC90 /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				E694110B2834F08F003DCC90 /* Assets.xcassets */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		E694111B2834F12E003DCC90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E69411162834F0D1003DCC90 /* ContactListViewController.swift */,
+				E696151B283501D000455DE8 /* DetailedListViewController.swift */,
+				E696151D2835021E00455DE8 /* ContactDataViewController.swift */,
+				E6AAA3AE28353B7400272E86 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E694111E2834F182003DCC90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E694111C2834F15A003DCC90 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6AAA3A9283538B700272E86 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6AAA3AA283538D300272E86 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69411072834F08E003DCC90 /* ViewController.swift in Sources */,
+				E6AAA3AF28353B7400272E86 /* TabBarViewController.swift in Sources */,
+				E69411172834F0D1003DCC90 /* ContactListViewController.swift in Sources */,
 				E69411032834F08E003DCC90 /* AppDelegate.swift in Sources */,
+				E694111D2834F15A003DCC90 /* Person.swift in Sources */,
+				E6AAA3AB283538D300272E86 /* DataManager.swift in Sources */,
+				E696151E2835021E00455DE8 /* ContactDataViewController.swift in Sources */,
+				E696151C283501D000455DE8 /* DetailedListViewController.swift in Sources */,
 				E69411052834F08E003DCC90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53S4PPJ97L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53S4PPJ97L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
